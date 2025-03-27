@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background: rgba(0, 0, 0, 0.8) !important; 
+        }
+
+        .navbar-nav .nav-item .nav-link:hover { 
+            color: #f8b400 !important; 
+        }
+
+        /* Hero section */
+        .hero-section {
+            background: url('https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/2YosfZW4O8ZhTFK77Bi3rt/b25bad23a8cecb0b86b3b34bb23df7fc/GettyImages-1016763896.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero-section h1, .hero-section p {
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Section Styling */
+        .section {
+            background: white;
+            color: black;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #f8b400;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Content Marketing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog_list' %}">Blog</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'social_media' %}">Social Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="content">
+            <h1>Welcome to Content Marketing</h1>
+            <p>Manage your content efficiently with our platform.</p>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center">About Us</h2>
+        <p>
+            At <strong>Content Marketing</strong>, we help businesses grow by creating high-quality, engaging content that captivates audiences. 
+            Our team of experts specializes in <strong>SEO, content strategy, social media marketing, and blogging</strong> to ensure your brand reaches its full potential.
+        </p>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>📱 Social Media Management</h3>
+                <p>We craft compelling social media strategies to boost your online presence across platforms like Facebook, Instagram, LinkedIn, and Twitter. 
+                From content creation to audience engagement, we help you build a strong digital footprint.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>📝 Blogging & Content Creation</h3>
+                <p>Engage your audience with informative and valuable blog posts. Our content marketing team creates SEO-optimized blogs that not only 
+                attract readers but also drive traffic and conversions for your business.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- What We Offer Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">What We Offer</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="https://i.pinimg.com/736x/d6/d0/ed/d6d0ed434ac67b6374808b18d7e5fdaf.jpg" class="card-img-top" alt="Social Media Marketing">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Media Marketing</h5>
+                            <p class="card-text">Expand your reach with effective social media strategies across platforms like Facebook, Instagram, Twitter, and LinkedIn.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="https://i.pinimg.com/736x/ec/7c/cb/ec7ccb7ceda37219815a3a07ee67a76f.jpg" class="card-img-top" alt="Blog Writing">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Writing</h5>
+                            <p class="card-text">Engage your audience with high-quality, informative blog content tailored to your brand and industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="https://i.pinimg.com/736x/73/16/52/731652edcfe7157285b533b3b8e6d808.jpg" class="card-img-top" alt="Social Media Analytics">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Media Analytics</h5>
+                            <p class="card-text">Measure and analyze your social media performance to optimize engagement and conversion rates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Why Choose Us Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <p>We understand the digital landscape and provide customized content marketing solutions tailored to your business needs.</p>
+            <ul class="list-unstyled">
+                <li>✔ Expert SEO Strategies</li>
+                <li>✔ High-Quality Content Creation</li>
+                <li>✔ Data-Driven Insights</li>
+                <li>✔ Social Media Management</li>
+                <li>✔ Affordable Pricing</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Content Marketing. All Rights Reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
